@@ -1,5 +1,6 @@
 #include "SDL.h"
 #include <stdio.h>
+#include "SDL_image.h"
 
 int SDL_RenderDrawCircle(SDL_Renderer* renderer, int x, int y, int radius);
 int SDL_RenderFillCircle(SDL_Renderer* renderer, int x, int y, int radius);
@@ -38,16 +39,16 @@ int main(int argc, char* argv[]) {
     rect.h = 100;
 
     // Select the color for drawing.
-    SDL_SetRenderDrawColor(renderer, 255, 255, 0, 255);                // test
+    SDL_SetRenderDrawColor(renderer, 255, 0, 0, 255);                // test
 
     //Fill the rect on the renderer
-    //SDL_RenderFillRect(renderer, &rect);                          //commenter
+    SDL_RenderFillRect(renderer, &rect);                          //commenter
 
     //Draw the rect on the renderer
-    SDL_RenderDrawRect(renderer, &rect);
+    //SDL_RenderDrawRect(renderer, &rect);
 
     //It is set to red here.
-    //SDL_SetRenderDrawColor(renderer, 255, 0, 0, 255);             //commenter
+    SDL_SetRenderDrawColor(renderer, 255, 0, 0, 255);             //commenter
 
     int x = 100;
     int y = 200;

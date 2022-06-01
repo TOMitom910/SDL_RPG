@@ -76,13 +76,13 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
-      <AdditionalIncludeDirectories>C:\Ludus_Academie\Année_2\Algorithmie\TP\C\sdl\SDL_RPG\librairie_sdl\SDL2-2.0.16_Visual_Studio\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Ludus_Academie\Année_2\Algorithmie\TP\C\sdl\librairie_sdl\SDL2_image-2.0.5\include;C:\Ludus_Academie\Année_2\Algorithmie\TP\C\sdl\SDL_RPG\librairie_sdl\SDL2-2.0.16_Visual_Studio\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
-      <AdditionalLibraryDirectories>C:\Ludus_Academie\Année_2\Algorithmie\TP\C\sdl\SDL_RPG\librairie_sdl\SDL2-2.0.16_Visual_Studio\lib\x86;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
-      <AdditionalDependencies>SDL2main.lib;SDL2.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>C:\Ludus_Academie\Année_2\Algorithmie\TP\C\sdl\librairie_sdl\SDL2_image-2.0.5\lib\x86;C:\Ludus_Academie\Année_2\Algorithmie\TP\C\sdl\SDL_RPG\librairie_sdl\SDL2-2.0.16_Visual_Studio\lib\x86;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>SDL2main.lib;SDL2_image.lib;SDL2.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
