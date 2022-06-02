@@ -2,9 +2,11 @@
 
 Game *game = nullptr;
 
-int main(int argc, const char * argv[])
+int main(int argc, const char *argv[])
 {
 	game = new Game();
+
+	game->init("BirchEngine", SDL_WINDOWPOS_CENTERED, SDL_WINDOWPOS_CENTERED, 640, 480, false);
 
 	while (game->running())
 	{
